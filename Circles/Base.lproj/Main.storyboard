@@ -217,24 +217,281 @@
             <objects>
                 <viewController storyboardIdentifier="HomeVC" id="1Ju-PM-Qnc" customClass="HomeViewController" customModule="Circles" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qFi-je-Hac">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Success" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a7t-rX-gBh">
-                                <rect key="frame" x="186" y="438" width="65" height="21"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jhO-Eq-pLS">
+                                <rect key="frame" x="20" y="44" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Add Friend" image="person.crop.circle.fill.badge.plus" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                                </state>
+                                <connections>
+                                    <segue destination="U26-GJ-zpv" kind="show" id="j8X-UE-rQB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UUg-hS-QUp">
+                                <rect key="frame" x="361" y="47" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="alarm.fill" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                                </state>
+                                <connections>
+                                    <segue destination="UOZ-xe-Y0m" kind="show" id="lXM-2p-Syy"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Success" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a7t-rX-gBh">
+                                <rect key="frame" x="175" y="62" width="65" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="V3y-bB-DUX">
+                                <rect key="frame" x="70" y="307" width="274" height="216"/>
+                                <subviews>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DtA-Vy-4s2">
+                                        <rect key="frame" x="0.0" y="0.0" width="274" height="216"/>
+                                    </pickerView>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c6a-rR-Bjh">
+                                <rect key="frame" x="46" y="137" width="100" height="105"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dRE-Nw-T0Q">
+                                        <rect key="frame" x="39" y="42" width="22" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ImM-mw-ehh">
+                                <rect key="frame" x="262" y="595" width="111" height="107"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="AV" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LZx-Bu-1TN">
+                                        <rect key="frame" x="44" y="43" width="22" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="V3y-bB-DUX" firstAttribute="leading" secondItem="PiS-oU-dli" secondAttribute="leading" constant="70" id="l1d-aH-ZSA"/>
+                            <constraint firstItem="PiS-oU-dli" firstAttribute="trailing" secondItem="V3y-bB-DUX" secondAttribute="trailing" constant="70" id="pnO-H5-l3i"/>
+                            <constraint firstItem="V3y-bB-DUX" firstAttribute="top" secondItem="a7t-rX-gBh" secondAttribute="bottom" constant="8" symbolic="YES" id="u76-RT-awI"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="PiS-oU-dli"/>
                     </view>
+                    <navigationItem key="navigationItem" id="ndX-ej-1Jv"/>
+                    <connections>
+                        <outlet property="addFriendButton" destination="jhO-Eq-pLS" id="HEy-lX-ukf"/>
+                        <outlet property="alertSettingsButton" destination="UUg-hS-QUp" id="OPH-Wy-njd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fim-9O-cGH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2537.68115942029" y="117.85714285714285"/>
+        </scene>
+        <!--Alert Settings View Controller-->
+        <scene sceneID="C1u-CW-Exm">
+            <objects>
+                <viewController id="UOZ-xe-Y0m" customClass="AlertSettingsViewController" customModule="Circles" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hbQ-6Z-mwX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="fk2-p2-9CX">
+                                <rect key="frame" x="40" y="40" width="334" height="634"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Send me a notification when --" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="etf-XR-v6S">
+                                        <rect key="frame" x="0.0" y="0.0" width="334" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="N1D-MT-Vdi"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Vb-fH-l2j">
+                                        <rect key="frame" x="0.0" y="82" width="334" height="60"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Someone in my circle is in danger" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tWU-WV-ouz">
+                                                <rect key="frame" x="0.0" y="0.0" width="285" height="60"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="077-I9-pfT">
+                                                <rect key="frame" x="285" y="0.0" width="51" height="60"/>
+                                            </switch>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="qb2-Wi-i8c"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IVU-2e-MDl">
+                                        <rect key="frame" x="0.0" y="164" width="334" height="60"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Someone who was in danger is now safe" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YBE-aw-9Ja">
+                                                <rect key="frame" x="0.0" y="0.0" width="285" height="60"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g2p-Eo-zlU">
+                                                <rect key="frame" x="285" y="0.0" width="51" height="60"/>
+                                            </switch>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="ue5-mr-ETe"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fu5-Tr-l3T">
+                                        <rect key="frame" x="0.0" y="246" width="334" height="60"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Someone in my 2nd circle is in danger" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DOc-Nu-rl4">
+                                                <rect key="frame" x="0.0" y="0.0" width="285" height="60"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9y4-hA-ggW">
+                                                <rect key="frame" x="285" y="0.0" width="51" height="60"/>
+                                            </switch>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="83e-GR-HJV"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yTK-AO-ke7">
+                                        <rect key="frame" x="0.0" y="328" width="334" height="60"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Someone in my circle tested positive" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X7Z-Go-Wr6">
+                                                <rect key="frame" x="0.0" y="0.0" width="285" height="60"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DMA-ZF-d8X">
+                                                <rect key="frame" x="285" y="0.0" width="51" height="60"/>
+                                            </switch>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="SLu-vW-KE5"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0kQ-yU-6jO">
+                                        <rect key="frame" x="0.0" y="410" width="334" height="60"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Someone in my circle tested negative" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rqd-9B-h6H">
+                                                <rect key="frame" x="0.0" y="0.0" width="285" height="60"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YDt-j4-fEU">
+                                                <rect key="frame" x="285" y="0.0" width="51" height="60"/>
+                                            </switch>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="DxH-AV-3Hc"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iic-rs-twC">
+                                        <rect key="frame" x="0.0" y="492" width="334" height="60"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Someone in my circle is quarantining" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yuN-uw-PXY">
+                                                <rect key="frame" x="0.0" y="0.0" width="285" height="60"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UIt-kU-z7g">
+                                                <rect key="frame" x="285" y="0.0" width="51" height="60"/>
+                                            </switch>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="DAd-GM-ZLn"/>
+                                        </constraints>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WuW-4G-LUa">
+                                        <rect key="frame" x="0.0" y="574" width="334" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="qM3-qT-aWQ"/>
+                                        </constraints>
+                                        <state key="normal" title="Save Choices"/>
+                                        <connections>
+                                            <segue destination="1Ju-PM-Qnc" kind="show" id="C4u-Wv-Jgv"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="fk2-p2-9CX" firstAttribute="leading" secondItem="w87-bB-U4L" secondAttribute="leading" constant="40" id="e0e-bn-a0D"/>
+                            <constraint firstItem="fk2-p2-9CX" firstAttribute="top" secondItem="w87-bB-U4L" secondAttribute="top" constant="40" id="foP-0K-BuS"/>
+                            <constraint firstItem="w87-bB-U4L" firstAttribute="trailing" secondItem="fk2-p2-9CX" secondAttribute="trailing" constant="40" id="hnO-1q-i19"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="w87-bB-U4L"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="z2G-Jh-9ay"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="soN-Uk-8YP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3321.739130434783" y="562.5"/>
+        </scene>
+        <!--Add Friend View Controller-->
+        <scene sceneID="7Q8-w0-u4W">
+            <objects>
+                <viewController id="U26-GJ-zpv" customClass="AddFriendViewController" customModule="Circles" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Cg0-NH-2kI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="Yvn-ih-mTQ">
+                                <rect key="frame" x="40" y="40" width="334" height="416"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="L71-Gm-jbD">
+                                        <rect key="frame" x="0.0" y="0.0" width="334" height="334"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="334" id="YfX-Lh-2Lm"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pBM-In-OsX">
+                                        <rect key="frame" x="0.0" y="356" width="334" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="VtL-nT-D8u"/>
+                                        </constraints>
+                                        <state key="normal" title="Scan"/>
+                                        <connections>
+                                            <action selector="scanButtonPressed:" destination="U26-GJ-zpv" eventType="touchUpInside" id="phK-Zr-yjG"/>
+                                            <segue destination="1Ju-PM-Qnc" kind="show" id="mq5-1a-0M8"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Yvn-ih-mTQ" firstAttribute="top" secondItem="4pI-tx-MFO" secondAttribute="top" constant="40" id="9dp-T2-MYQ"/>
+                            <constraint firstItem="Yvn-ih-mTQ" firstAttribute="leading" secondItem="4pI-tx-MFO" secondAttribute="leading" constant="40" id="Kez-bd-CCM"/>
+                            <constraint firstItem="4pI-tx-MFO" firstAttribute="trailing" secondItem="Yvn-ih-mTQ" secondAttribute="trailing" constant="40" id="N2b-69-Duk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4pI-tx-MFO"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Lk3-QN-kwj"/>
+                    <connections>
+                        <outlet property="QRCodeImage" destination="L71-Gm-jbD" id="4Wn-Vj-dRV"/>
+                        <outlet property="scanButton" destination="pBM-In-OsX" id="IOt-Ki-aeM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hhY-wn-uHv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3323" y="-103"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="BWq-pe-PKy">
@@ -255,4 +512,11 @@
             <point key="canvasLocation" x="131.8840579710145" y="137.94642857142856"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="C4u-Wv-Jgv"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="alarm.fill" catalog="system" width="124" height="128"/>
+        <image name="person.crop.circle.fill.badge.plus" catalog="system" width="128" height="101"/>
+    </resources>
 </document>

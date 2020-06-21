@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,6 +18,8 @@
 		51BFB655249F58E4009CFBC8 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51BFB654249F58E4009CFBC8 /* SignUpViewController.swift */; };
 		51BFB657249F58F4009CFBC8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51BFB656249F58F4009CFBC8 /* HomeViewController.swift */; };
 		51BFB659249F5F20009CFBC8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 51BFB658249F5F20009CFBC8 /* GoogleService-Info.plist */; };
+		51BFB65B249FF193009CFBC8 /* AddFriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51BFB65A249FF193009CFBC8 /* AddFriendViewController.swift */; };
+		51BFB65D249FF7B9009CFBC8 /* AlertSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51BFB65C249FF7B9009CFBC8 /* AlertSettingsViewController.swift */; };
 		723C40405107F7B042BB3138 /* Pods_CirclesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7171B2BAE3AD0F95E2B1528F /* Pods_CirclesTests.framework */; };
 		F9C9C1BF64DC317FA5B62682 /* Pods_Circles.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25EE0F33653E9841028816A6 /* Pods_Circles.framework */; };
 /* End PBXBuildFile section */
@@ -52,6 +54,8 @@
 		51BFB654249F58E4009CFBC8 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		51BFB656249F58F4009CFBC8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		51BFB658249F5F20009CFBC8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		51BFB65A249FF193009CFBC8 /* AddFriendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFriendViewController.swift; sourceTree = "<group>"; };
+		51BFB65C249FF7B9009CFBC8 /* AlertSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertSettingsViewController.swift; sourceTree = "<group>"; };
 		7171B2BAE3AD0F95E2B1528F /* Pods_CirclesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CirclesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		939932F53F8B7EFB14CA0547 /* Pods-CirclesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CirclesTests.debug.xcconfig"; path = "Target Support Files/Pods-CirclesTests/Pods-CirclesTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -127,6 +131,8 @@
 				51BFB651249F5834009CFBC8 /* LoginViewController.swift */,
 				51BFB654249F58E4009CFBC8 /* SignUpViewController.swift */,
 				51BFB656249F58F4009CFBC8 /* HomeViewController.swift */,
+				51BFB65A249FF193009CFBC8 /* AddFriendViewController.swift */,
+				51BFB65C249FF7B9009CFBC8 /* AlertSettingsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -148,7 +154,6 @@
 				939932F53F8B7EFB14CA0547 /* Pods-CirclesTests.debug.xcconfig */,
 				305358312073372AA34791EC /* Pods-CirclesTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -322,8 +327,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				51BFB652249F5834009CFBC8 /* LoginViewController.swift in Sources */,
+				51BFB65B249FF193009CFBC8 /* AddFriendViewController.swift in Sources */,
 				51BFB634249F5786009CFBC8 /* ViewController.swift in Sources */,
 				51BFB630249F5786009CFBC8 /* AppDelegate.swift in Sources */,
+				51BFB65D249FF7B9009CFBC8 /* AlertSettingsViewController.swift in Sources */,
 				51BFB632249F5786009CFBC8 /* SceneDelegate.swift in Sources */,
 				51BFB655249F58E4009CFBC8 /* SignUpViewController.swift in Sources */,
 				51BFB657249F58F4009CFBC8 /* HomeViewController.swift in Sources */,

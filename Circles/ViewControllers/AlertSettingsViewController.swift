@@ -1,5 +1,5 @@
 //
-//  HomeViewController.swift
+//  AlertSettingsViewController.swift
 //  Circles
 //
 //  Created by Shubham Bhokare on 6/21/20.
@@ -8,10 +8,8 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class AlertSettingsViewController: UIViewController {
 
-    @IBOutlet weak var addFriendButton: UIButton!
-    @IBOutlet weak var alertSettingsButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
