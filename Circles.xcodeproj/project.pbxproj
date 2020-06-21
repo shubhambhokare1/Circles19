@@ -14,6 +14,7 @@
 		51BFB639249F5789009CFBC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51BFB638249F5789009CFBC8 /* Assets.xcassets */; };
 		51BFB63C249F5789009CFBC8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51BFB63A249F5789009CFBC8 /* LaunchScreen.storyboard */; };
 		51BFB647249F5789009CFBC8 /* CirclesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51BFB646249F5789009CFBC8 /* CirclesTests.swift */; };
+		51BFB652249F5834009CFBC8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51BFB651249F5834009CFBC8 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		51BFB642249F5789009CFBC8 /* CirclesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CirclesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		51BFB646249F5789009CFBC8 /* CirclesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CirclesTests.swift; sourceTree = "<group>"; };
 		51BFB648249F5789009CFBC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51BFB651249F5834009CFBC8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				51BFB638249F5789009CFBC8 /* Assets.xcassets */,
 				51BFB63A249F5789009CFBC8 /* LaunchScreen.storyboard */,
 				51BFB63D249F5789009CFBC8 /* Info.plist */,
+				51BFB651249F5834009CFBC8 /* LoginViewController.swift */,
 			);
 			path = Circles;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51BFB652249F5834009CFBC8 /* LoginViewController.swift in Sources */,
 				51BFB634249F5786009CFBC8 /* ViewController.swift in Sources */,
 				51BFB630249F5786009CFBC8 /* AppDelegate.swift in Sources */,
 				51BFB632249F5786009CFBC8 /* SceneDelegate.swift in Sources */,
