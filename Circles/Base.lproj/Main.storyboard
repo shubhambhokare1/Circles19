@@ -215,7 +215,7 @@
         <!--Home View Controller-->
         <scene sceneID="F9q-xU-9oD">
             <objects>
-                <viewController id="1Ju-PM-Qnc" customClass="HomeViewController" customModule="Circles" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeVC" id="1Ju-PM-Qnc" customClass="HomeViewController" customModule="Circles" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qFi-je-Hac">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
