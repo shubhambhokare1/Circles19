@@ -9,7 +9,8 @@
 import UIKit
 
 class AddFriendViewController: UIViewController {
-
+    @IBOutlet weak var ShareTextField: UITextField!
+    
     @IBOutlet weak var QRCodeImage: UIImageView!
     @IBOutlet weak var scanButton: UIButton!
     override func viewDidLoad() {
@@ -17,6 +18,8 @@ class AddFriendViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         generateQRcode()
+        styles.styleTF(ShareTextField)
+        styles.styleBut(scanButton)
     }
     
 

@@ -23,6 +23,11 @@ class SignUpViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        styles.styleBut(signUpButton)
+        styles.styleTF(firstNameTextField)
+        styles.styleTF(lastNameTextField)
+        styles.styleTF(emailTextField)
+        styles.styleTF(passwordTextField)
     }
     
 

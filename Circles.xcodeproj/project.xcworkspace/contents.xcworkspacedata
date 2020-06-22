@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Circles.xcodeproj">
+      location = "self:/Users/Shubham/Desktop/Circles/Circles.xcodeproj">
    </FileRef>
 </Workspace>

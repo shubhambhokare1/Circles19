@@ -10,13 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
     @IBOutlet weak var logoImageView: UIImageView!
+    @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var signUpButton: UIButton!
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        logoImageView.image = UIImage(named: "logo.jpeg")
+        styles.styleBut(loginButton)
+        styles.styleBut(signUpButton)
     }
-
-
 }
 

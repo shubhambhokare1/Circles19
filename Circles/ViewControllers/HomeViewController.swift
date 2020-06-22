@@ -43,6 +43,8 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         statusPicker.delegate = self
         myStatusTextField.inputView = statusPicker
         
+        styles.styleTF(myStatusTextField)
+        myStatusTextField.textAlignment = .center
         
     }
     

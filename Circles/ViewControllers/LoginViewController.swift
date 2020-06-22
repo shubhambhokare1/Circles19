@@ -18,6 +18,10 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        styles.styleBut(loginButton)
+        styles.styleTF(emailTextField)
+        styles.styleTF(passwordTextField)
+        
     }
     
 
