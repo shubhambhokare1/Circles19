@@ -40,17 +40,26 @@
                                     <constraint firstItem="7tN-ec-oBK" firstAttribute="height" secondItem="bjB-LY-v4G" secondAttribute="height" id="wJX-yv-q93"/>
                                 </constraints>
                             </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VnI-Q0-f9I">
+                                <rect key="frame" x="40" y="212" width="334" height="429"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fLw-Jb-jjd" secondAttribute="trailing" constant="40" id="00e-cJ-udb"/>
                             <constraint firstItem="fLw-Jb-jjd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="88f-y8-Xnr"/>
+                            <constraint firstItem="VnI-Q0-f9I" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="L9i-Az-9QL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VnI-Q0-f9I" secondAttribute="trailing" constant="40" id="eKw-jd-7id"/>
                             <constraint firstItem="fLw-Jb-jjd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="592" id="i6W-sB-ybn"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fLw-Jb-jjd" secondAttribute="bottom" constant="40" id="sWk-KP-Vx5"/>
+                            <constraint firstItem="VnI-Q0-f9I" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="xpd-U4-944"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="Xp0-gz-JnW"/>
+                    <connections>
+                        <outlet property="logoImageView" destination="VnI-Q0-f9I" id="3cy-2A-yGz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -240,54 +249,23 @@
                                     <segue destination="UOZ-xe-Y0m" kind="show" id="lXM-2p-Syy"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Success" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a7t-rX-gBh">
-                                <rect key="frame" x="175" y="62" width="65" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="V3y-bB-DUX">
-                                <rect key="frame" x="70" y="307" width="274" height="216"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="NMq-ys-nND">
+                                <rect key="frame" x="100" y="300" width="214" height="208"/>
                                 <subviews>
-                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DtA-Vy-4s2">
-                                        <rect key="frame" x="0.0" y="0.0" width="274" height="216"/>
-                                    </pickerView>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="My Status" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Okj-ME-q1x">
+                                        <rect key="frame" x="0.0" y="0.0" width="214" height="208"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
                                 </subviews>
                             </stackView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c6a-rR-Bjh">
-                                <rect key="frame" x="46" y="137" width="100" height="105"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dRE-Nw-T0Q">
-                                        <rect key="frame" x="39" y="42" width="22" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ImM-mw-ehh">
-                                <rect key="frame" x="262" y="595" width="111" height="107"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="AV" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LZx-Bu-1TN">
-                                        <rect key="frame" x="44" y="43" width="22" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="V3y-bB-DUX" firstAttribute="leading" secondItem="PiS-oU-dli" secondAttribute="leading" constant="70" id="l1d-aH-ZSA"/>
-                            <constraint firstItem="PiS-oU-dli" firstAttribute="trailing" secondItem="V3y-bB-DUX" secondAttribute="trailing" constant="70" id="pnO-H5-l3i"/>
-                            <constraint firstItem="V3y-bB-DUX" firstAttribute="top" secondItem="a7t-rX-gBh" secondAttribute="bottom" constant="8" symbolic="YES" id="u76-RT-awI"/>
+                            <constraint firstItem="NMq-ys-nND" firstAttribute="leading" secondItem="PiS-oU-dli" secondAttribute="leading" constant="100" id="4t2-0S-bII"/>
+                            <constraint firstItem="NMq-ys-nND" firstAttribute="top" secondItem="PiS-oU-dli" secondAttribute="top" constant="300" id="Bxb-ZB-YaR"/>
+                            <constraint firstItem="PiS-oU-dli" firstAttribute="trailing" secondItem="NMq-ys-nND" secondAttribute="trailing" constant="100" id="gbP-xA-tW4"/>
+                            <constraint firstItem="PiS-oU-dli" firstAttribute="bottom" secondItem="NMq-ys-nND" secondAttribute="bottom" constant="300" id="hl3-DB-7h0"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PiS-oU-dli"/>
                     </view>
@@ -295,6 +273,7 @@
                     <connections>
                         <outlet property="addFriendButton" destination="jhO-Eq-pLS" id="HEy-lX-ukf"/>
                         <outlet property="alertSettingsButton" destination="UUg-hS-QUp" id="OPH-Wy-njd"/>
+                        <outlet property="myStatusTextField" destination="Okj-ME-q1x" id="2ms-z8-s38"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fim-9O-cGH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -444,6 +423,22 @@
             </objects>
             <point key="canvasLocation" x="3321.739130434783" y="562.5"/>
         </scene>
+        <!--Scanner View Controller-->
+        <scene sceneID="VhX-SG-Vqh">
+            <objects>
+                <viewController id="7Bm-hx-A19" customClass="ScannerViewController" customModule="Circles" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="acu-TD-g6s">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="nsa-cx-YCg"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="bT4-hb-Zhh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WGI-cI-ifh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2551" y="-583"/>
+        </scene>
         <!--Add Friend View Controller-->
         <scene sceneID="7Q8-w0-u4W">
             <objects>
@@ -469,7 +464,7 @@
                                         <state key="normal" title="Scan"/>
                                         <connections>
                                             <action selector="scanButtonPressed:" destination="U26-GJ-zpv" eventType="touchUpInside" id="phK-Zr-yjG"/>
-                                            <segue destination="1Ju-PM-Qnc" kind="show" id="mq5-1a-0M8"/>
+                                            <segue destination="7Bm-hx-A19" kind="show" id="FKb-oa-pX5"/>
                                         </connections>
                                     </button>
                                 </subviews>
